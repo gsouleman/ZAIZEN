@@ -144,10 +144,6 @@ function App() {
                             <p className="about-text">
                                 Our platform combines cutting-edge technology with personalized service to deliver transparent, efficient, and secure management of your most valuable assets. Whether you're planning for retirement, managing multiple properties, or preparing wealth transfer to future generations, we provide the expertise and tools you need.
                             </p>
-                            <div className="about-media">
-                                <img src="/assets/real_estate_image.png" alt="Real Estate" className="about-image" />
-                                <video autoPlay loop muted className="about-video" src="/assets/estate_demo.mp4" />
-                            </div>
                         </div>
                     </section>
 
