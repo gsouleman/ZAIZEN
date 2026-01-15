@@ -1,10 +1,11 @@
 :root {
-  --primary: #CC0000;
+  --primary: #1a1a1a;
+  --accent: #d4a574;
   --background: #FFFFFF;
-  --text: #000000;
-  --text-secondary: #333333;
-  --border: #DDDDDD;
-  --font-sans: Arial, Helvetica, sans-serif;
+  --text: #333333;
+  --text-light: #666666;
+  --border: #E0E0E0;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
 }
 
 * {
@@ -18,6 +19,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
 }
 
 a {
@@ -31,146 +33,304 @@ a {
   min-height: 100vh;
 }
 
-/* Header */
+/* Header with Navigation */
 .header {
-  background-color: var(--primary);
-  padding: 10px 20px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 70px;
 }
 
-.header-content {
+.logo {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
 }
 
 .logo-text {
-  font-size: 28px;
-  font-weight: 900;
-  color: #FFFFFF;
-  letter-spacing: -1px;
-}
-
-.edition-badge {
-  background-color: #FFFFFF;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.edition-text {
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--primary);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-size: 11px;
+  color: var(--text-light);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 24px 0;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  z-index: 1001;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #F8F8F8;
+  color: var(--accent);
 }
 
 /* Main Content */
-.scroll-content {
+.main-content {
   flex: 1;
-  padding: 30px 20px;
+  background-color: #FAFAFA;
+}
+
+.content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  padding: 40px 20px;
 }
 
-/* Links Grid - All in One Row */
-.links-grid {
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  border-radius: 4px;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #CCCCCC;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estates Section */
+.estates-section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.estates-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 20px;
+  gap: 24px;
 }
 
-.link-item {
+.estate-card {
   background: #FFFFFF;
   border: 1px solid var(--border);
-  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.link-item:hover:not(.disabled) {
-  border-color: var(--primary);
+.estate-card:hover:not(.disabled) {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--accent);
 }
 
-.link-item.disabled {
+.estate-card.disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-.link-image-container {
+.estate-image-container {
   width: 100%;
   height: 180px;
   overflow: hidden;
   background-color: #F0F0F0;
 }
 
-.link-image {
+.estate-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.link-title {
+.estate-card:hover:not(.disabled) .estate-image {
+  transform: scale(1.05);
+}
+
+.estate-content {
+  padding: 20px;
+}
+
+.estate-title {
   font-size: 18px;
-  font-weight: bold;
-  padding: 12px 12px 6px;
-  color: var(--text);
-}
-
-.link-item:hover:not(.disabled) .link-title {
+  font-weight: 600;
   color: var(--primary);
+  margin-bottom: 8px;
 }
 
-.link-description {
-  font-size: 13px;
-  line-height: 1.4;
-  color: var(--text-secondary);
-  padding: 0 12px 12px;
+.estate-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-light);
 }
 
 /* Footer */
 .footer {
-  padding: 20px;
-  border-top: 1px solid var(--border);
-  background: #F5F5F5;
+  background-color: var(--primary);
+  color: #FFFFFF;
+  padding: 40px 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-section p {
+  font-size: 13px;
+  color: #CCCCCC;
+}
+
+.footer-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.footer-text {
-  font-size: 12px;
-  color: var(--text-secondary);
-}
-
-.footer-links {
-  display: flex;
-  gap: 16px;
+  gap: 8px;
 }
 
 .footer-link {
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 13px;
+  color: #CCCCCC;
+  transition: color 0.2s;
 }
 
 .footer-link:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .links-grid {
+  .estates-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .estates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
   }
 }
 
 @media (max-width: 640px) {
-  .links-grid {
-    grid-template-columns: 1fr;
+  .estate-image-container {
+    height: 200px;
   }
 
-  .link-image-container {
-    height: 200px;
+  .nav-link {
+    font-size: 12px;
   }
 }
