@@ -26,10 +26,9 @@ const LINKS = [
     {
         id: 'cooperate',
         title: 'Cooperate',
-        description: 'Enterprise solutions for estate planning. Coming Soon.',
-        url: '',
+        description: 'Enterprise solutions for estate planning.',
+        url: 'https://great-ideas.onrender.com/',
         image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop',
-        disabled: true,
     },
 ];
 
@@ -40,6 +39,7 @@ const NAV_ITEMS = [
             { label: 'Personal Estate', url: 'https://ghouenzen.onrender.com/dashboard' },
             { label: 'Njikam Estate', url: 'https://campost-biling.onrender.com/' },
             { label: 'Family', url: 'https://family-cw0o.onrender.com/dashboard' },
+            { label: 'Cooperate', url: 'https://great-ideas.onrender.com/' },
         ],
     },
     { label: 'About', url: '#about' },
@@ -62,6 +62,11 @@ const SERVICES = [
         title: 'Financial Planning',
         description: 'Personalized wealth management strategies designed to optimize your financial position and achieve long-term security.',
         icon: '💼',
+    },
+    {
+        title: 'Corporate Solutions',
+        description: 'Specialized enterprise structuring and corporate governance services to streamline business operations and secure commercial legacies.',
+        icon: '🏢',
     },
 ];
 
@@ -184,11 +189,10 @@ function App() {
                             {LINKS.map((link) => (
                                 <a
                                     key={link.id}
-                                    href={link.disabled ? undefined : link.url}
-                                    className={`estate-card ${link.disabled ? 'disabled' : ''}`}
-                                    target={link.disabled ? undefined : "_blank"}
+                                    href={link.url}
+                                    className="estate-card"
+                                    target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={(e) => link.disabled && e.preventDefault()}
                                 >
                                     <div className="estate-image-container">
                                         <img src={link.image} alt={link.title} className="estate-image" />
