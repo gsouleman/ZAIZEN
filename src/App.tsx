@@ -11,7 +11,7 @@ const LINKS = [
     },
     {
         id: 'njikam',
-        title: 'Njikam Estate',
+        title: 'Campost Mankon',
         description: 'Campost Biling - Family heritage and property management.',
         url: 'https://campost-biling.onrender.com/',
         image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop',
@@ -37,7 +37,7 @@ const NAV_ITEMS = [
         label: 'Estates',
         items: [
             { label: 'Personal Estate', url: 'https://ghouenzen.onrender.com/dashboard' },
-            { label: 'Njikam Estate', url: 'https://campost-biling.onrender.com/' },
+            { label: 'Campost Mankon', url: 'https://campost-biling.onrender.com/' },
             { label: 'Family', url: 'https://family-cw0o.onrender.com/dashboard' },
             { label: 'Cooperate', url: 'https://great-ideas.onrender.com/' },
         ],
