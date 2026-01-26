@@ -53,26 +53,31 @@ const SERVICES = [
         title: 'Estate Management',
         description: 'Comprehensive estate planning and management solutions to preserve and grow your family wealth across generations.',
         icon: '🏛️',
+        url: 'https://ghouenzen.onrender.com/dashboard',
     },
     {
         title: 'Asset Tracking',
         description: 'Advanced digital tools for real-time monitoring and valuation of your property portfolio, investments, and valuable assets.',
         icon: '📊',
+        url: 'https://ghouenzen.onrender.com/dashboard',
     },
     {
         title: 'Financial Planning',
         description: 'Personalized wealth management strategies designed to optimize your financial position and achieve long-term security.',
         icon: '💼',
+        url: 'https://family-cw0o.onrender.com/dashboard',
     },
     {
         title: 'Farm Management',
         description: 'Professional agricultural estate management with comprehensive tools for tracking farm operations, crop allocation, and financial performance across your farming properties.',
         icon: '🌾',
+        url: 'https://farm-management-qb62.onrender.com/index.html#farm-info',
     },
     {
         title: 'Corporate Solutions',
         description: 'Specialized enterprise structuring and corporate governance services to streamline business operations and secure commercial legacies.',
         icon: '🏢',
+        url: 'https://great-ideas.onrender.com/',
     },
 ];
 
@@ -163,11 +168,17 @@ function App() {
                         <h3 className="section-title">Our Services</h3>
                         <div className="services-grid">
                             {SERVICES.map((service) => (
-                                <div key={service.title} className="service-card">
+                                <a
+                                    key={service.title}
+                                    href={service.url}
+                                    className="service-card"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <div className="service-icon">{service.icon}</div>
                                     <h4 className="service-title">{service.title}</h4>
                                     <p className="service-description">{service.description}</p>
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </section>
