@@ -40,6 +40,7 @@ const NAV_ITEMS = [
             { label: 'Campost Mankon', url: 'https://campost-biling.onrender.com/' },
             { label: 'Family', url: 'https://family-cw0o.onrender.com/dashboard' },
             { label: 'Cooperate', url: 'https://great-ideas.onrender.com/' },
+            { label: 'Farm Management', url: 'https://farm-management-qb62.onrender.com/index.html#farm-info' },
         ],
     },
     { label: 'About', url: '#about' },
@@ -62,6 +63,11 @@ const SERVICES = [
         title: 'Financial Planning',
         description: 'Personalized wealth management strategies designed to optimize your financial position and achieve long-term security.',
         icon: '💼',
+    },
+    {
+        title: 'Farm Management',
+        description: 'Professional agricultural estate management with comprehensive tools for tracking farm operations, crop allocation, and financial performance across your farming properties.',
+        icon: '🌾',
     },
     {
         title: 'Corporate Solutions',
