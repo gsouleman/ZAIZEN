@@ -51,43 +51,45 @@ const NAV_ITEMS = [
 const SERVICES = [
     {
         title: 'Estate Management',
-        description: 'Comprehensive estate planning and management solutions to preserve and grow your family wealth across generations.',
+        description: 'Comprehensive estate planning and legacy management solutions designed to preserve, protect, and efficiently transfer your family wealth across generations. Our platform provides secure documentation, beneficiary management, inheritance distribution planning, and complete estate valuation tools to ensure your legacy is managed according to your wishes.',
         icon: '🏛️',
         url: 'https://ghouenzen.onrender.com/dashboard',
     },
     {
-        title: 'Asset Tracking',
-        description: 'Advanced digital tools for real-time monitoring and valuation of your property portfolio, investments, and valuable assets.',
+        title: 'Asset Management',
+        description: 'Advanced digital asset tracking and portfolio management system offering real-time monitoring, valuation, and comprehensive reporting for all your properties, investments, and valuable possessions. Track ownership documentation, appreciation trends, maintenance schedules, and generate detailed asset reports for financial planning and insurance purposes.',
         icon: '📊',
         url: 'https://ghouenzen.onrender.com/dashboard',
     },
     {
-        title: 'Financial Planning',
-        description: 'Personalized wealth management strategies designed to optimize your financial position and achieve long-term security.',
-        icon: '💼',
-        url: 'https://family-cw0o.onrender.com/dashboard',
-    },
-    {
         title: 'Farm Management',
-        description: 'Professional agricultural estate management with comprehensive tools for tracking farm operations, crop allocation, and financial performance across your farming properties.',
+        description: 'Professional agricultural estate management platform with comprehensive tools for tracking farm operations, crop allocation, land use optimization, and financial performance analysis. Monitor farm boundaries, manage multiple plots, track seasonal yields, analyze profitability by crop type, and maintain complete records of all farming activities across your agricultural properties.',
         icon: '🌾',
         url: 'https://farm-management-qb62.onrender.com/index.html#farm-info',
     },
     {
-        title: 'Corporate Solutions',
-        description: 'Specialized enterprise structuring and corporate governance services to streamline business operations and secure commercial legacies.',
+        title: 'Personal Financial Management',
+        description: 'Personalized wealth management and financial planning services designed to optimize your individual financial position and achieve long-term security. Track income and expenses, manage debts and credits, monitor cash flow, set financial goals, and receive actionable insights to improve your financial health and build sustainable wealth for the future.',
+        icon: '💼',
+        url: 'https://ghouenzen.onrender.com/dashboard',
+    },
+    {
+        title: 'Associations Financial Management',
+        description: 'Specialized financial management solutions for families, cooperatives, and business associations. Streamline collaborative wealth management, transparent fund tracking, member contribution monitoring, collective investment oversight, and comprehensive financial reporting. Perfect for family estates, agricultural cooperatives, investment clubs, and partnership ventures.',
         icon: '🏢',
-        url: 'https://great-ideas.onrender.com/',
+        url: 'https://family-cw0o.onrender.com/dashboard',
     },
 ];
 
 const FEATURES = [
-    'Secure cloud-based asset documentation',
-    'Real-time portfolio valuation and analytics',
-    'Multi-generational estate planning',
-    'Professional financial advisory services',
-    'Inheritance distribution management',
-    'Tax-efficient wealth transfer strategies',
+    'Comprehensive estate planning and beneficiary designation',
+    'Real-time asset tracking with automated valuation updates',
+    'Agricultural land management and crop profitability analysis',
+    'Personal income, expense, and cash flow monitoring',
+    'Collaborative financial management for associations and cooperatives',
+    'Secure cloud-based documentation and record keeping',
+    'Multi-generational wealth transfer and inheritance planning',
+    'Professional financial reporting and analytics dashboards',
 ];
 
 function App() {
@@ -100,7 +102,7 @@ function App() {
                 <div className="header-inner">
                     <div className="logo">
                         <h1 className="logo-text">ZAIZEN</h1>
-                        <span className="logo-subtitle">Estate Management</span>
+                        <span className="logo-subtitle">Complete Estate Management</span>
                     </div>
 
                     <nav className="nav">
@@ -146,19 +148,22 @@ function App() {
 
                     {/* Hero Section */}
                     <section className="hero-section">
-                        <h2 className="hero-title">Professional Estate & Wealth Management</h2>
+                        <h2 className="hero-title">Complete Estate, Asset & Financial Management Solutions</h2>
                         <p className="hero-subtitle">
-                            Trusted solutions for managing, protecting, and growing your family's legacy across generations
+                            Integrated wealth management platform for estates, assets, farms, personal finances, and associations — Empowering individuals, families, and organizations to build and preserve lasting prosperity
                         </p>
                     </section>
 
                     <section id="about" className="about-section">
                         <div className="about-content">
                             <p className="about-text">
-                                We provide comprehensive wealth and asset management services designed to help families preserve and grow their financial legacy. With decades of combined expertise in estate planning, financial advisory, and asset management, we offer a complete suite of tools and services tailored to your unique needs.
+                                ZAIZEN Estate Management is a comprehensive digital platform designed to revolutionize how individuals, families, and associations manage their wealth and assets. Our integrated solution brings together estate planning, asset tracking, agricultural management, personal finance, and collaborative wealth management into one secure, easy-to-use system.
                             </p>
                             <p className="about-text">
-                                Our platform combines cutting-edge technology with personalized service to deliver transparent, efficient, and secure management of your most valuable assets. Whether you're planning for retirement, managing multiple properties, or preparing wealth transfer to future generations, we provide the expertise and tools you need.
+                                Whether you're managing a personal estate, tracking valuable assets, overseeing agricultural properties, planning your financial future, or coordinating finances for a cooperative or family association, ZAIZEN provides the professional tools and insights you need. Our platform combines cutting-edge technology with intuitive design to deliver transparent, efficient, and secure management of your most valuable resources.
+                            </p>
+                            <p className="about-text">
+                                With decades of combined expertise in financial planning, agricultural management, and estate administration, we've built a platform that serves individuals, families, farmers, and organizations. From documenting assets and tracking farm operations to managing collective investments and planning generational wealth transfer, ZAIZEN is your trusted partner in building and preserving lasting prosperity.
                             </p>
                         </div>
                     </section>
