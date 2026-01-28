@@ -8,7 +8,8 @@
   --text-light: #475569;
   --text-muted: #94A3B8;
   --border: #E2E8F0;
-  --header-bg: rgba(255, 255, 255, 0.8);
+  --header-bg: #CC0000;
+  --header-text: #FFFFFF;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -43,13 +44,10 @@ a {
 /* Header with Navigation */
 .header {
   background-color: var(--header-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
 }
 
 .header-inner {
@@ -70,18 +68,18 @@ a {
 
 .logo-text {
   font-size: 26px;
-  font-weight: 900;
-  color: var(--primary);
-  letter-spacing: -0.5px;
+  font-weight: 950;
+  color: var(--header-text);
+  letter-spacing: -1px;
   margin: 0;
   line-height: 1;
 }
 
 .logo-subtitle {
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-light);
-  letter-spacing: 0.2px;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5px;
   margin-top: 4px;
   text-transform: uppercase;
 }
@@ -99,25 +97,25 @@ a {
 
 .nav-link {
   font-size: 14px;
-  font-weight: 600;
-  color: var(--text-light);
-  padding: 10px 16px;
-  border-radius: 8px;
+  font-weight: 700;
+  color: var(--header-text);
+  padding: 8px 16px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-link:hover {
-  color: var(--primary);
-  background-color: rgba(204, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .nav-link.active {
-  color: var(--primary);
-  background-color: rgba(204, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .dropdown {

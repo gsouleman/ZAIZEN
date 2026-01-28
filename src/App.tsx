@@ -46,7 +46,6 @@ const NAV_ITEMS = [
     { label: 'About', url: '#about' },
     { label: 'Services', url: '#services' },
     { label: 'Contact', url: '#contact' },
-    { label: 'Launch Dashboard', url: 'https://ghouenzen.onrender.com/dashboard', isCTA: true },
 ];
 
 const SERVICES = [
@@ -114,11 +113,7 @@ function App() {
                                 onMouseEnter={() => item.items && setActiveDropdown(item.label)}
                                 onMouseLeave={() => setActiveDropdown(null)}
                             >
-                                {item.isCTA ? (
-                                    <a href={item.url} className="btn-launch" target="_blank" rel="noopener noreferrer">
-                                        {item.label}
-                                    </a>
-                                ) : item.url ? (
+                                {item.url ? (
                                     <a href={item.url} className="nav-link">
                                         {item.label}
                                         {item.items && <span style={{ fontSize: '10px', marginLeft: '2px' }}>▼</span>}
