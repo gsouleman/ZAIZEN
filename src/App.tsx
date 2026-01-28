@@ -34,18 +34,19 @@ const LINKS = [
 
 const NAV_ITEMS = [
     {
-        label: 'Estates',
+        label: 'Portals',
         items: [
-            { label: 'Personal Estate', url: 'https://ghouenzen.onrender.com/dashboard' },
-            { label: 'Campost Mankon', url: 'https://campost-biling.onrender.com/' },
-            { label: 'Family', url: 'https://family-cw0o.onrender.com/dashboard' },
-            { label: 'Cooperate', url: 'https://great-ideas.onrender.com/' },
-            { label: 'Farm Management', url: 'https://farm-management-qb62.onrender.com/landing.html' },
+            { label: 'Personal Estate', desc: 'Secure asset & wealth dashboard', url: 'https://ghouenzen.onrender.com/dashboard' },
+            { label: 'Campost Mankon', desc: 'Family heritage management', url: 'https://campost-biling.onrender.com/' },
+            { label: 'Family Wealth', desc: 'Inheritance & collective tracking', url: 'https://family-cw0o.onrender.com/dashboard' },
+            { label: 'Cooperate', desc: 'Enterprise estate solutions', url: 'https://great-ideas.onrender.com/' },
+            { label: 'Farm Management', desc: 'Agricultural operations & land', url: 'https://farm-management-qb62.onrender.com/landing.html' },
         ],
     },
     { label: 'About', url: '#about' },
     { label: 'Services', url: '#services' },
     { label: 'Contact', url: '#contact' },
+    { label: 'Launch Dashboard', url: 'https://ghouenzen.onrender.com/dashboard', isCTA: true },
 ];
 
 const SERVICES = [
@@ -100,10 +101,10 @@ function App() {
             {/* Navigation Header */}
             <header className="header">
                 <div className="header-inner">
-                    <div className="logo">
+                    <a href="/" className="logo">
                         <h1 className="logo-text">ZAIZEN</h1>
                         <span className="logo-subtitle">Complete Estate Management</span>
-                    </div>
+                    </a>
 
                     <nav className="nav">
                         {NAV_ITEMS.map((item) => (
@@ -113,12 +114,20 @@ function App() {
                                 onMouseEnter={() => item.items && setActiveDropdown(item.label)}
                                 onMouseLeave={() => setActiveDropdown(null)}
                             >
-                                {item.url ? (
-                                    <a href={item.url} className="nav-link">
+                                {item.isCTA ? (
+                                    <a href={item.url} className="btn-launch" target="_blank" rel="noopener noreferrer">
                                         {item.label}
                                     </a>
+                                ) : item.url ? (
+                                    <a href={item.url} className="nav-link">
+                                        {item.label}
+                                        {item.items && <span style={{ fontSize: '10px', marginLeft: '2px' }}>▼</span>}
+                                    </a>
                                 ) : (
-                                    <span className="nav-link">{item.label}</span>
+                                    <span className="nav-link">
+                                        {item.label}
+                                        {item.items && <span style={{ fontSize: '10px', marginLeft: '2px' }}>▼</span>}
+                                    </span>
                                 )}
 
                                 {item.items && activeDropdown === item.label && (
@@ -131,7 +140,8 @@ function App() {
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
-                                                {subItem.label}
+                                                <span className="dropdown-item-label">{subItem.label}</span>
+                                                {subItem.desc && <span className="dropdown-item-desc">{subItem.desc}</span>}
                                             </a>
                                         ))}
                                     </div>
