@@ -53,19 +53,16 @@ const SERVICES = [
         title: 'Estate & Legacy Planning',
         description: 'Comprehensive estate structuring and legacy preservation solutions designed to protect and transition familial wealth across generations. Our platform facilitates secure documentation, beneficiary designation, inheritance distribution strategies, and sophisticated estate valuation tools to ensure your legacy is managed with precision and foresight.',
         icon: '🏛️',
-        url: 'https://ghouenzen.onrender.com/dashboard',
     },
     {
         title: 'Agricultural Asset Management',
         description: 'Professionalized agro-industrial management platform equipped with specialized tools for operational oversight, land-use optimization, and precise financial performance analytics. Execute boundary monitoring, manage diversified land parcels, track crop cycles, and maintain rigorous records of all agricultural activities to maximize yield and profitability.',
         icon: '🌾',
-        url: 'https://farm-management-qb62.onrender.com/landing.html',
     },
     {
         title: 'Universal Financial Manager',
         description: 'A dual-purpose financial ecosystem engineered for both private wealth and institutional fiscal management. Streamline personal cash flow, overhead monitoring, and goal-setting while simultaneously managing cooperative funds, member contributions, and collective investment vehicles with institutional-grade transparency and reporting.',
         icon: '💼',
-        url: 'https://ghouenzen.onrender.com/dashboard',
     }
 ];
 
@@ -166,17 +163,14 @@ function App() {
                         <h3 className="section-title">Our Services</h3>
                         <div className="services-grid">
                             {SERVICES.map((service) => (
-                                <a
+                                <div
                                     key={service.title}
-                                    href={service.url}
                                     className="service-card"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                 >
                                     <div className="service-icon">{service.icon}</div>
                                     <h4 className="service-title">{service.title}</h4>
                                     <p className="service-description">{service.description}</p>
-                                </a>
+                                </div>
                             ))}
                         </div>
                     </section>
