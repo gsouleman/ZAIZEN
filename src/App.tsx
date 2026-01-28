@@ -40,7 +40,7 @@ const NAV_ITEMS = [
             { label: 'Campost Mankon', url: 'https://campost-biling.onrender.com/' },
             { label: 'Family', url: 'https://family-cw0o.onrender.com/dashboard' },
             { label: 'Cooperate', url: 'https://great-ideas.onrender.com/' },
-            { label: 'Farm Management', url: 'https://farm-management-qb62.onrender.com/index.html#farm-info' },
+            { label: 'Farm Management', url: 'https://farm-management-qb62.onrender.com/login.html' },
         ],
     },
     { label: 'About', url: '#about' },
@@ -65,7 +65,7 @@ const SERVICES = [
         title: 'Farm Management',
         description: 'Professional agricultural estate management platform with comprehensive tools for tracking farm operations, crop allocation, land use optimization, and financial performance analysis. Monitor farm boundaries, manage multiple plots, track seasonal yields, analyze profitability by crop type, and maintain complete records of all farming activities across your agricultural properties.',
         icon: '🌾',
-        url: 'https://farm-management-qb62.onrender.com/index.html#farm-info',
+        url: 'https://farm-management-qb62.onrender.com/login.html',
     },
     {
         title: 'Personal Financial Management',
