@@ -50,46 +50,34 @@ const NAV_ITEMS = [
 
 const SERVICES = [
     {
-        title: 'Estate Management',
-        description: 'Comprehensive estate planning and legacy management solutions designed to preserve, protect, and efficiently transfer your family wealth across generations. Our platform provides secure documentation, beneficiary management, inheritance distribution planning, and complete estate valuation tools to ensure your legacy is managed according to your wishes.',
+        title: 'Estate & Legacy Planning',
+        description: 'Comprehensive estate structuring and legacy preservation solutions designed to protect and transition familial wealth across generations. Our platform facilitates secure documentation, beneficiary designation, inheritance distribution strategies, and sophisticated estate valuation tools to ensure your legacy is managed with precision and foresight.',
         icon: '🏛️',
         url: 'https://ghouenzen.onrender.com/dashboard',
     },
     {
-        title: 'Asset Management',
-        description: 'Advanced digital asset tracking and portfolio management system offering real-time monitoring, valuation, and comprehensive reporting for all your properties, investments, and valuable possessions. Track ownership documentation, appreciation trends, maintenance schedules, and generate detailed asset reports for financial planning and insurance purposes.',
-        icon: '📊',
-        url: 'https://ghouenzen.onrender.com/dashboard',
-    },
-    {
-        title: 'Farm Management',
-        description: 'Professional agricultural estate management platform with comprehensive tools for tracking farm operations, crop allocation, land use optimization, and financial performance analysis. Monitor farm boundaries, manage multiple plots, track seasonal yields, analyze profitability by crop type, and maintain complete records of all farming activities across your agricultural properties.',
+        title: 'Agricultural Asset Management',
+        description: 'Professionalized agro-industrial management platform equipped with specialized tools for operational oversight, land-use optimization, and precise financial performance analytics. Execute boundary monitoring, manage diversified land parcels, track crop cycles, and maintain rigorous records of all agricultural activities to maximize yield and profitability.',
         icon: '🌾',
         url: 'https://farm-management-qb62.onrender.com/landing.html',
     },
     {
-        title: 'Personal Financial Management',
-        description: 'Personalized wealth management and financial planning services designed to optimize your individual financial position and achieve long-term security. Track income and expenses, manage debts and credits, monitor cash flow, set financial goals, and receive actionable insights to improve your financial health and build sustainable wealth for the future.',
+        title: 'Universal Financial Manager',
+        description: 'A dual-purpose financial ecosystem engineered for both private wealth and institutional fiscal management. Streamline personal cash flow, overhead monitoring, and goal-setting while simultaneously managing cooperative funds, member contributions, and collective investment vehicles with institutional-grade transparency and reporting.',
         icon: '💼',
         url: 'https://ghouenzen.onrender.com/dashboard',
-    },
-    {
-        title: 'Associations Financial Management',
-        description: 'Specialized financial management solutions for families, cooperatives, and business associations. Streamline collaborative wealth management, transparent fund tracking, member contribution monitoring, collective investment oversight, and comprehensive financial reporting. Perfect for family estates, agricultural cooperatives, investment clubs, and partnership ventures.',
-        icon: '🏢',
-        url: 'https://family-cw0o.onrender.com/dashboard',
-    },
+    }
 ];
 
 const FEATURES = [
-    'Comprehensive estate planning and beneficiary designation',
-    'Real-time asset tracking with automated valuation updates',
-    'Agricultural land management and crop profitability analysis',
-    'Personal income, expense, and cash flow monitoring',
-    'Collaborative financial management for associations and cooperatives',
-    'Secure cloud-based documentation and record keeping',
-    'Multi-generational wealth transfer and inheritance planning',
-    'Professional financial reporting and analytics dashboards',
+    'Advanced estate structuring and multi-generational legacy planning',
+    'Real-time fiscal monitoring with automated valuation and risk assessment',
+    'Integrated agro-industrial land management and yield optimization',
+    'Sophisticated personal and corporate cash flow analytics',
+    'Collaborative financial oversight for associations and cooperatives',
+    'Secured, encrypted repository for critical documentation and assets',
+    'Strategic wealth transition and inheritance management frameworks',
+    'Comprehensive institutional-grade financial reporting and bi-metrics',
 ];
 
 function App() {
@@ -153,22 +141,22 @@ function App() {
 
                     {/* Hero Section */}
                     <section className="hero-section">
-                        <h2 className="hero-title">Complete Estate, Asset & Financial Management Solutions</h2>
+                        <h2 className="hero-title">Premier Estate, Agricultural & Institutional Financial Management</h2>
                         <p className="hero-subtitle">
-                            Integrated wealth management platform for estates, assets, farms, personal finances, and associations — Empowering individuals, families, and organizations to build and preserve lasting prosperity
+                            An integrated ecosystem for sophisticated wealth management—spanning private estates, agricultural assets, and collaborative financial frameworks. Empowering individuals and organizations to architect and preserve enduring prosperity.
                         </p>
                     </section>
 
                     <section id="about" className="about-section">
                         <div className="about-content">
                             <p className="about-text">
-                                ZAIZEN Estate Management is a comprehensive digital platform designed to revolutionize how individuals, families, and associations manage their wealth and assets. Our integrated solution brings together estate planning, asset tracking, agricultural management, personal finance, and collaborative wealth management into one secure, easy-to-use system.
+                                ZAIZEN is a sophisticated digital orchestration platform designed to redefine the management of high-value estates and institutional assets. Our integrated solution harmonizes estate & legacy planning, agricultural asset management, and universal financial oversight into a singular, fortified ecosystem.
                             </p>
                             <p className="about-text">
-                                Whether you're managing a personal estate, tracking valuable assets, overseeing agricultural properties, planning your financial future, or coordinating finances for a cooperative or family association, ZAIZEN provides the professional tools and insights you need. Our platform combines cutting-edge technology with intuitive design to deliver transparent, efficient, and secure management of your most valuable resources.
+                                Whether overseeing private wealth, managing expansive agro-industrial holdings, or coordinating the fiscal operations of associations and cooperatives, ZAIZEN provides the institutional-grade tools necessary for rigorous stewardship. Our platform merges advanced technological infrastructure with intuitive design to ensure transparency, efficiency, and absolute security for your most vital resources.
                             </p>
                             <p className="about-text">
-                                With decades of combined expertise in financial planning, agricultural management, and estate administration, we've built a platform that serves individuals, families, farmers, and organizations. From documenting assets and tracking farm operations to managing collective investments and planning generational wealth transfer, ZAIZEN is your trusted partner in building and preserving lasting prosperity.
+                                Built upon a foundation of multi-disciplinary expertise in financial engineering, agricultural management, and estate administration, ZAIZEN serves a global clientele of individuals, families, and enterprises. From strategic asset transition to real-time performance analytics, we are your essential partner in the pursuit and preservation of multi-generational prosperity.
                             </p>
                         </div>
                     </section>
